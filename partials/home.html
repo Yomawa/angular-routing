@@ -1,0 +1,12 @@
+<h1>{{message}}</h1>
+<form action="javasript:void(0)" ng-sumbit="movieSearch(search.title)"> 
+  <input type="text" ng-model="search.title">
+  <input type="submit" >
+</form>
+<div>
+  <ul>
+    <li ng-repeat="movie in movies">
+    {{movie.Title}}
+    </li>
+  </ul>
+</div>
